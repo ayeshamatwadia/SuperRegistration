@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class User {
     @Id
     @GeneratedValue
-    private int id;
+    private Long id;
 
     private String name;
 
