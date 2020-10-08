@@ -7,3 +7,7 @@ Backend spring-boot application
 cd into the backend folder and run
 
 mvn spring-boot:run
+
+running the tests:
+
+.\mvnw test
