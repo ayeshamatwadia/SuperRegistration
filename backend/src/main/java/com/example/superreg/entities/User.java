@@ -3,6 +3,7 @@ package com.example.superreg.entities;
 import javax.persistence.*;
 
 @Entity
+@Table(name="sr_user")
 public class User {
     @Id
     @GeneratedValue
