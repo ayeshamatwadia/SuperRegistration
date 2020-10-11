@@ -16,7 +16,22 @@ public class UserServiceImplUnitTest {
     UserServiceImpl userService = new UserServiceImpl(mockRespository);
 
     @Test
-    void testSomethingReallyspecialandstuff() {
-        assert (true == true);
+    void testTheIsValidNameMethod() {
+        assert (userService.nameIsValid("") == false);
+        assert (userService.nameIsValid("Ayesha Matwadia") == true);
+        assert (userService.nameIsValid("Ayesha") == true);
+        assert (userService.nameIsValid("@Ayesha Matwadia") == false);
+        assert (userService.nameIsValid("Ayesha1Matwadia") == false);
+        assert (userService.nameIsValid("Ayesha+Matwadia") == false);
+    }
+
+    @Test
+    void testTheValidTelephoneNumberMethod() {
+        assert (userService.telephoneNumberIsValid("") == false);
+        assert (userService.telephoneNumberIsValid("$27830985673") == false);
+        assert (userService.telephoneNumberIsValid("+27830985673") == true);
+        assert (userService.telephoneNumberIsValid("+278309856") == false);
+        assert (userService.telephoneNumberIsValid("+278309856efg") == false);
+
     }
 }
