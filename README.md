@@ -39,6 +39,17 @@ in another terminal
 >
 >ng serve
 
+step4:
+
+The App is available here: http://localhost:4200
+
+The API is available here: http://localhost:8080
+
+The postgres docker internal port is 5432. I have chosen to expose it externally on port 5452
+just in case the user has a default postgres running on their machine.
+
+To start interacting with the app go to http://localhost:4200 
+
 ## Other commands
 
 To bring down the docker container run from the project route
