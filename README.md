@@ -1,14 +1,18 @@
 # Super Registration App
 An Angularjs spring-boot application that deals with a user registration and viewing of users all backed by a dockerized postgres database ie this is a CRUD exercise using angular and spring boot
 
+#project pre-requisites
+
+You need JAVA 8, Maven, Docker, Node&NPM and Angular Cli to be able to successfully run this application
+
 ## starting the app
 
 step1:
 
-bring up the docker container using the yaml file provide in the route directory of the project
+bring up the docker container using the yaml file provide in the route directory of this project
 > docker-compose up -d
 
-make sure your docker container is up
+make sure the docker postgres container is up
 >docker container ls
 
 you are looking for a container named super_registration_db
@@ -27,7 +31,7 @@ step3:
 
 start up the angular front end
 
-in another terminal run
+in another terminal
 
 >cd frontend
 >
