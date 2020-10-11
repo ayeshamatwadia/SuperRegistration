@@ -9,7 +9,7 @@ import { RestApiService } from "../../shared/rest-api.service";
 })
 export class UserCreateComponent implements OnInit {
 
-  @Input() userDetails = { name: '', idNumber: 0, telephoneNumber: '' }
+  @Input() userDetails = { name: '', idNumber: null, telephoneNumber: '' }
 
   constructor(public restApi: RestApiService, 
     public router: Router) { }
