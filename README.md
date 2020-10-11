@@ -1,28 +1,43 @@
-# Super Registration
-An Angularjs spring-boot application that deals with a user registration and viewing of users all backed by a dockerized database ie this is a CRUD exercise using angular and spring boot
+# Super Registration App
+An Angularjs spring-boot application that deals with a user registration and viewing of users all backed by a dockerized postgres database ie this is a CRUD exercise using angular and spring boot
 
-#Running the application
-Backend spring-boot application
+## starting the app
 
-cd into the backend folder and run
+step1:
 
-mvn spring-boot:run
+bring up the docker container using the yaml file provide in the route directory of the project
+> docker-compose up -d
 
-running the tests:
+make sure your docker container is up
+>docker container ls
 
-.\mvnw test
+you are looking for a container named super_registration_db
 
-# starting up your postgres container
-from the route run
+step2:
 
-docker-compose up -d
+start your backend application
 
-make sure the container is running using
+>cd backend
+>
+>mvn spring-boot:run
 
-docker container ls
+step3:
 
-you should see the container name: super_registration_db
+start up the angular front end
 
-to bring down and remove the container run:
+in another terminal run
 
-docker-compose down
+>cd frontend
+>
+>ng serve
+
+## Other commands
+
+To bring down the docker container run from the project route
+
+>docker-compose down
+
+To run the backend tests:
+
+> cd backend
+> .\mvnw test
