@@ -60,3 +60,15 @@ To run the backend tests:
 
 > cd backend
 > .\mvnw test
+
+building artifacts for the front end (/dist):
+
+>ng build
+
+Running frontend tests via Karma:
+
+>ng test
+
+Running end to end tests via Protractor
+
+>ng e2e
