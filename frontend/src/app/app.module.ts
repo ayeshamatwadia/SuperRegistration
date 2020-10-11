@@ -12,8 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 
 // Components
-import { UserCreateComponent } from './user-create/user-create.component';
-import { UserListComponent } from './user-list/user-list.component';
+import { UserCreateComponent } from './components/user-create/user-create.component';
+import { UserListComponent } from './components/user-list/user-list.component';
 
 @NgModule({
   declarations: [
