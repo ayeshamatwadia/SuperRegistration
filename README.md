@@ -19,6 +19,8 @@ start your backend application
 
 >cd backend
 >
+>mvn clean install
+>
 >mvn spring-boot:run
 
 step3:
@@ -28,6 +30,8 @@ start up the angular front end
 in another terminal run
 
 >cd frontend
+>
+>npm install
 >
 >ng serve
 
